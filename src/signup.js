@@ -12,7 +12,7 @@ const SignupUnique = () => {
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [agreeTerms, setAgreeTerms] = useState(false);
-  const [user, loading, error] = useAuthState(auth);
+  const [ error] = useAuthState(auth);
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
