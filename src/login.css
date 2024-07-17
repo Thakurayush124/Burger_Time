@@ -1,0 +1,128 @@
+/* login2.css */
+.login2-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.login2-title {
+  font-size: 40px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.login2-para {
+  font-size: 16px;
+  margin-bottom: 25px;
+  margin-top: 10%;
+  text-align: left;
+}
+
+.login2-input-container {
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.login2-input-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.login2-input-container input {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login2-toggle-password {
+  position: absolute;
+  top: 68%;
+  right: 10px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.login2-sign-in-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #FF8C00;
+  color: white;
+  border: none;
+  margin:25px 0;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login2-sign-in-button:hover {
+  background-color: #e65c00;
+}
+
+.login2-separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 0;
+  width: 100%;
+  position: relative;
+  line-height: 0.1em;
+}
+
+.login2-google-signin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  border:1px solid white;
+  cursor: pointer;
+}
+
+.login2-google-signin:hover {
+  background-color: white;
+}
+
+.login2-google-icon {
+  height: 40px;
+  width: 40px;
+  border: 1px solid #524a4a;
+  border-radius: 50%;
+}
+
+.login2-error {
+  color: red;
+  margin-top: 10px;
+}
+
+.login2-signup-link {
+  text-align: center;
+  margin-left: 1%;
+}
+
+.login2-link {
+  color: #ff8c00;
+  text-decoration: none;
+}
+
+.login2-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 390px) {
+  .login2-container {
+    margin-top: 25%;
+    padding: 5%;
+  }
+}

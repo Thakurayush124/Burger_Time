@@ -1,0 +1,98 @@
+/* endpage.css */
+.endpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Added position relative */
+    margin-top: 1px;
+    height: 100vh;
+    width: 100%;
+    background-color: #FF8C00;
+}
+
+.logout-button11 {
+    position: absolute; /* Added position absolute */
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    padding: 10px 20px;
+    background-color: #FF8C00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+  .logout-button:hover {
+    color:#999;
+
+  }
+
+  /* .social-circle {
+    width: 24%;
+    height: 225%;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    left:30%;
+    bottom:10%;
+   
+} */
+ .social-circle {
+    width: 24%;
+
+    height: 65%;
+    border-radius: 50%;
+    margin-left:45%;
+    scale:80%
+}
+.social-button {
+    position: fixed;
+    bottom: 10px;
+    left: 85%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-button:hover {
+    transform: scale(1.1);
+  }
+  
+  .social-button i {
+    color: black;
+    font-size: 24px;
+  }
+  
+  .social-circle {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    
+    overflow: hidden;
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+  }
+  
+  .social-circle.active {
+    width: 200px;
+    height: 200px;
+    opacity: 1;
+    visibility: visible;
+  }
+
+ 
+  
