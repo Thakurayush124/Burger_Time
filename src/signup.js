@@ -110,8 +110,8 @@ const SignupUnique = () => {
               required
             />
             <span>
-              I Agree with <a href="#" className="signup-link">Terms of Service</a> and{' '}
-              <a href="#" className="signup-link">Privacy Policy</a>
+              I Agree with <a href="./policy.txt" className="signup-link">Terms of Service</a> and{' '}
+              <a href="./policy.txt" className="signup-link">Privacy Policy</a>
             </span>
           </label>
         </div>
