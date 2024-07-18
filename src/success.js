@@ -1,18 +1,21 @@
 import React from 'react';
-import './LoginSuccessful.css';
 import { useNavigate } from 'react-router-dom';
+import { signOut } from 'firebase/auth';
+import { auth } from './Firebase.js';
+import './LoginSuccessful.css';
 
 const LoginSuccessful = () => {
   const navigate = useNavigate();
-
-  const handleLogout = () => {
-    // Add logout logic here
-    console.log('Logging out...');
-    navigate('/Login'); 
-  };
-
   const handleGoToTracking = () => {
     navigate('/endpage'); // Navigate to the tracking screen
+  };
+  const handleLogout = async () => {
+    try {
+      await signOut(auth);
+      navigate('/Login'); // Redirect to login page after logout
+    } catch (error) {
+      console.error("Error signing out: ", error);
+    }
   };
 
   return (
@@ -36,3 +39,9 @@ const LoginSuccessful = () => {
 };
 
 export default LoginSuccessful;
+
+
+
+
+
+
